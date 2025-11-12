@@ -1,5 +1,6 @@
 {
-  "name": "world-wether-api",
+  "name": "world-weather-api",
+  "homepage": "https://github.com/Emad-Eljoker/world-weather-api",
   "version": "0.1.0",
   "private": true,
   "dependencies": {

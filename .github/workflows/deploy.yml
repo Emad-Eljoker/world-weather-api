@@ -17,14 +17,11 @@ jobs:
       - name: Setup Node
         uses: actions/setup-node@v3
 
-      - name: Clean NPM cache
-        run: npm cache clean --force
-
       - name: Install dependencies
-        run: npm install
+        uses: bahmutov/npm-install@v1
 
       - name: Build project
-        run: CI=false npm run build
+        run: CI=false npm run build   # ← هنا التعديل المهم
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
