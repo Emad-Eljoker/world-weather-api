@@ -24,7 +24,7 @@ jobs:
         run: npm install
 
       - name: Build project
-        run: CI=false npm run build   # ← هنا التعديل المهم
+        run: CI=false npm run build
 
       - name: Upload production-ready build files
         uses: actions/upload-artifact@v4
@@ -49,4 +49,4 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: ./build
+          publish_dir:_
